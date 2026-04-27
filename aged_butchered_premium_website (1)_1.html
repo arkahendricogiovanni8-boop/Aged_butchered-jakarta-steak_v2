@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aged + Butchered Jakarta - Pengalaman Steak Dry-Aged Premium in a luxurious fine dining atmosphere." />
+  <title>Aged + Butchered Jakarta | Premium Steakhouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    nav{position:fixed;top:0;left:0;width:100%;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,10,.45);backdrop-filter:blur(8px);z-index:999;border-bottom:1px solid rgba(212,175,106,.1);} 
+    nav h2{color:#d4af6a;font-family:'Playfair Display',serif;} 
+    nav ul{display:flex;gap:22px;list-style:none;color:#f5e8d0;font-size:.95rem;} 
+    nav ul li a:hover{color:#d4af6a;} 
+    .floating-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:600;box-shadow:0 8px 25px rgba(0,0,0,.35);z-index:999;} 
+    .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,rgba(0,0,0,.45),rgba(50,30,10,.3));}
+    .hero{position:relative;background-attachment:fixed;}
+    .hero-content{position:relative;z-index:1;}
+    .glow:hover{box-shadow:0 0 25px rgba(212,175,106,.4);}
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+    body{font-family:'Poppins',sans-serif;background:#0f0d0b;color:#f7f1e8;line-height:1.6;}
+    h1,h2,h3{font-family:'Playfair Display',serif;}
+    a{text-decoration:none;color:inherit;}
+    section{padding:80px 8%;}
+    .btn{padding:14px 28px;border-radius:30px;font-weight:600;transition:.3s;display:inline-block;}
+    .btn-primary{background:linear-gradient(135deg,#caa56a,#8b6a3f);color:#fff;}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(202,165,106,.35);}
+    .btn-secondary{border:1px solid #caa56a;color:#caa56a;margin-left:12px;}
+    .btn-secondary:hover{background:#caa56a;color:#111;}
+    .hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;}
+    .hero-content{max-width:700px;animation:fadeIn 1.5s ease;}
+    .hero h1{font-size:4rem;color:#f5deb3;}
+    .hero p{font-size:1.2rem;margin:20px 0 30px;color:#f1e7d7;}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    .section-title{text-align:center;font-size:2.5rem;color:#d4af6a;margin-bottom:18px;}
+    .section-sub{text-align:center;max-width:700px;margin:0 auto 50px;color:#d8c9b0;}
+    .about-grid,.location-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center;}
+    .about-grid img,.location-grid iframe{width:100%;border-radius:18px;box-shadow:0 10px 35px rgba(0,0,0,.4);}
+    .menu-grid,.gallery-grid,.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+    .card{background:linear-gradient(180deg,#1a1612,#14110f);border:1px solid rgba(202,165,106,.15);border-radius:18px;overflow:hidden;transition:.35s;box-shadow:0 8px 25px rgba(0,0,0,.3);}
+    .card:hover{transform:translateY(-8px);box-shadow:0 18px 35px rgba(202,165,106,.18);}
+    .card img{width:100%;height:200px;object-fit:cover;}
+    .card-content{padding:18px;}
+    .price{color:#d4af6a;font-weight:600;margin-top:8px;display:block;}
+    .gallery-grid img{width:100%;height:250px;object-fit:cover;border-radius:15px;transition:.35s;}
+    .gallery-grid img:hover{transform:scale(1.05);}
+    form{display:grid;gap:15px;max-width:650px;margin:auto;background:#171310;padding:35px;border-radius:20px;box-shadow:0 10px 35px rgba(0,0,0,.35);}
+    input,select{padding:14px;border:none;border-radius:12px;background:#2a241f;color:#fff;}
+    .stars{color:#d4af6a;font-size:1.2rem;margin-bottom:10px;}
+    footer{padding:35px 8%;background:#0b0908;text-align:center;color:#cbb99a;border-top:1px solid rgba(202,165,106,.12);}
+    .socials a{margin:0 10px;color:#d4af6a;}
+    @media(max-width:768px){.hero h1{font-size:2.6rem}.btn-secondary{margin-left:0;margin-top:12px;display:block;width:max-content}}
+  </style>
+</head>
+<body>
+<nav>
+  <h2>Aged + Butchered</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Galeri</a></li>
+    <li><a href="#reservation">Reserve</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Aged + Butchered Jakarta</h1>
+    <p>Nikmati pengalaman steak premium terbaik dalam suasana fine dining yang elegan, eksklusif, dan mewah.</p>
+    <a href="#reservation" class="btn btn-primary">Reservasi Meja</a>
+    <a href="#menu" class="btn btn-secondary">Lihat Menu</a>
+  </div>
+</section>
+
+<section id="about" data-aos="fade-up">
+  <h2 class="section-title">Tentang Kami</h2>
+  <p class="section-sub">Nikmati pilihan steak dry-aged premium yang disiapkan secara sempurna dalam suasana mewah untuk pengalaman makan yang tak terlupakan.</p>
+  <div class="about-grid">
+    <div>
+      <h3 style="color:#d4af6a;margin-bottom:15px;">Pengalaman Steakhouse Mewah</h3>
+      <p>Aged + Butchered Jakarta menghadirkan daging dry-aged berkualitas premium yang diolah dengan sempurna dalam interior hangat dan elegan. Setiap detail dirancang untuk menciptakan suasana fine dining eksklusif bagi pecinta steak sejati.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" alt="Restaurant Interior">
+  </div>
+</section>
+
+<section id="menu" data-aos="fade-up">
+  <h2 class="section-title">Menu Premium Kami</h2>
+  <div class="menu-grid">
+    <div class="card"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80"><div class="card-content"><h3>Ribeye Signature</h3><p>Ribeye dry-aged premium yang juicy dan dipanggang sempurna.</p><span class="price">Rp 450.000</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"><div class="card-content"><h3>Kentang Truffle</h3><p>Kentang goreng renyah dengan parmesan dan minyak truffle.</p><span class="price">Rp 95.000</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"><div class="card-content"><h3>Lava Cake Cokelat</h3><p>Kue cokelat hangat dengan lelehan cokelat lembut di tengah.</p><span class="price">Rp 85.000</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80"><div class="card-content"><h3>Red Wine Premium</h3><p>Pilihan wine impor premium berkualitas terbaik.</p><span class="price">Rp 220.000</span></div></div>
+  </div>
+</section>
+
+<section id="gallery" data-aos="zoom-in">
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=80">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80">
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80">
+  </div>
+</section>
+
+<section id="reservation" data-aos="fade-up">
+  <h2 class="section-title">Reservasi Meja</h2>
+  <form>
+    <input type="text" placeholder="Nama Lengkap" required>
+    <input type="tel" placeholder="Nomor Telepon" required>
+    <input type="date" required>
+    <select required>
+      <option value="">Jumlah Tamu</option>
+      <option>2 Tamu</option>
+      <option>4 Tamu</option>
+      <option>6 Tamu</option>
+      <option>8+ Tamu</option>
+    </select>
+    <button class="btn btn-primary" type="submit">Pesan Sekarang</button>
+  </form>
+</section>
+
+<section id="reviews" data-aos="fade-up">
+  <h2 class="section-title">Ulasan Pelanggan</h2>
+  <div class="review-grid">
+    <div class="card"><div class="card-content"><div class="stars">★★★★★</div><p>“Pengalaman steakhouse terbaik di Jakarta. Suasana mewah dan rasa yang luar biasa.”</p><strong>- Michael</strong></div></div>
+    <div class="card"><div class="card-content"><div class="stars">★★★★★</div><p>“Pelayanan luar biasa, interior elegan, dan steak berkualitas terbaik. Sangat direkomendasikan.”</p><strong>- Amanda</strong></div></div>
+    <div class="card"><div class="card-content"><div class="stars">★★★★★</div><p>“Tempat makan premium dengan cita rasa dan suasana yang tak terlupakan.”</p><strong>- Daniel</strong></div></div>
+  </div>
+</section>
+
+<section id="location">
+  <h2 class="section-title">Lokasi Kami</h2>
+  <div class="location-grid">
+    <iframe src="https://www.google.com/maps?q=Jakarta&output=embed" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div>
+      <h3 style="color:#d4af6a;">Aged + Butchered Jakarta</h3>
+      <p>Jl. Premium Dining No. 88, Jakarta</p>
+      <p>Buka Setiap Hari: 12.00 - 22.00</p>
+      <p>Phone: +62 812 3456 7890</p>
+    </div>
+  </div>
+</section>
+
+<a class="floating-wa" href="https://wa.me/6281234567890" target="_blank">WhatsApp Kami</a>
+<footer>
+  <h3 style="color:#d4af6a;">Aged + Butchered Jakarta</h3>
+  <div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">WhatsApp</a></div>
+  <p>© 2026 Aged + Butchered Jakarta. All rights reserved.</p>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.querySelector('form').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = this.querySelector('input[type="text"]').value;
+      const guests = this.querySelector('select').value;
+      const date = this.querySelector('input[type="date"]').value;
+      const phone = this.querySelector('input[type="tel"]').value;
+      const msg = `Hello, I would like to reserve a table at Aged + Butchered Jakarta.%0AName: ${name}%0APhone: ${phone}%0ADate: ${date}%0AGuests: ${guests}`;
+      window.open(`https://wa.me/6281234567890?text=${msg}`,'_blank');
+    });
+  </script>
+</body>
+</html>
